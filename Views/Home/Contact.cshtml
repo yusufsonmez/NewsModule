@@ -1,0 +1,53 @@
+<header class="masthead" style="background-image: url('/img/contact-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="page-heading">
+                    <h1>İLETİŞİM</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <h4>İletişim</h4>
+            <br><br>
+            <form action="https://formsubmit.co/yusufsonmez1995@gmail.com" method="POST">
+                @* Email gonderimi icin FormSubmit kullanilmistir *@
+
+                <div className="d-flex flex-column gap-3">
+                    <div class="form-group">
+                        <input ref={currentRef} type="text" id="name" name="name" class="form-control"
+                            aria-describedby="nameHelp" placeholder="İsminiz" onChange={handleChange} />
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="E-Posta Adresiniz" onChange={handleChange} />
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" name="subject" class="form-control" id="subject" placeholder="Konu"
+                            onChange={handleChange} />
+                    </div>
+                    <br>
+                    <div class="form-floating">
+                        <textarea class="form-control" id="textArea" name="textArea" rows="3"
+                            onChange={handleChange}></textarea>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" id="sendMessageButton">Gönder</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<hr>
